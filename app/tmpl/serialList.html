@@ -1,0 +1,19 @@
+<md-subheader class="md-subheader-colored">Select the device to connect with</md-subheader>
+<md-list layout="vertical" >
+  <md-item ng-repeat="device in s.devices">
+
+      <md-item-content >
+          <div class="md-tile-left" ng-if="device.path == s.connected.path">
+              Connected
+          </div>
+          <div class="md-tile-content">
+            <md-button ng-click="s.connect(device.path)">{{ device.path }}</md-button>
+          </div>
+      </md-item-content>
+      <md-divider></md-divider>
+  </md-item>
+
+</md-list>
+
+
+

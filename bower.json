@@ -1,0 +1,26 @@
+{
+  "name": "Fled",
+  "version": "0.0.1",
+  "authors": [
+    "Robert Casanova <robb.casanova@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.0",
+    "angular-route": "~1.2.23",
+    "angular-material": "~0.4.2",
+    "angular-aria": "~1.3.0",
+    "angular-animate": "~1.3.0",
+    "material-design-icons": "~1.0.0",
+    "bitview": "https://github.com/kig/bitview.js.git"
+  }
+}

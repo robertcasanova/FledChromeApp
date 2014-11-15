@@ -1,0 +1,40 @@
+
+    <md-content style="height: 600px;">
+
+       <!--  <md-tabs selected="selectedIndex">
+                <md-tab ng-repeat="tab in tabs"
+                        on-select="onTabSelected(tab)"
+                        on-deselect="announceDeselected(tab)"
+                        ng-disabled="tab.disabled"
+                        label="{{tab.title}}">
+
+                    <div ng-class="tab.style" layout="vertical" layout-fill layout-align="center center">
+                        <div flex ng-bind="tab.content" class="tab-text"></div>
+                        <md-button class="md-theme-red btnRemove"
+                                   ng-click="removeTab( tab )">Remove Tab
+                        </md-button>
+                    </div>
+                </md-tab>
+        </md-tabs> -->
+        <section layout="horizontal">
+
+
+                <!-- <form action="" name="sendDataForm">
+                    <textarea name="serialData" ng-model="c.serialData">
+
+
+                    </textarea>
+                </form> -->
+            <upload-image flex="33" image-src="c.uploadedImageUrl"></upload-image>
+
+            <fled-simulator flex source="c.uploadedImageUrl" steps="120" tot-leds="48" serial-data="c.serialData" ></fled-simulator>
+
+
+
+        </section>
+        <section layout="vertical" layout-sm="horizontal" layout-align="center center">
+          <md-button flex ng-click="c.writeToEEPROM(c.serialData)" class="md-button-raised md-button-colored">Send data to FLED</md-button>
+        </section>
+    </md-content>
+
+
